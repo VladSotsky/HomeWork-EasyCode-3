@@ -59,23 +59,21 @@ console.log(simpleObjectGenerator(77, userNames, 'privet kak dela chto novogo'.t
 */
 
  
-// var myName = { name: 'Oleg' };
+var myName = {
+    name: 'Oleg'
+};
 
-// function addNameToUser(family,lustenko){
-//     name=name,
-//     Oleg="Oleg",
-//     argum3={name : Oleg};
-//     return(argum3)
-// }
+function addNameToUser(family, Lustenko, myName) {
+family=family,
+    Lustenko=Lustenko;
+    let newObject = {
+        family: Lustenko
+    }
+    newObject.name=myName
+    return (newObject)
+}
 
-// console.log(addNameToUser('family', '%Lustenko%', myName));
-// /*
-// {name:'Oleg', family:'%Lustenko%'}
-// */
-// console.log(myName);
- /*
-// {name:'Oleg'}
-*/
+console.log(addNameToUser('family', '%Lustenko%', myName));
 
 
 /*
